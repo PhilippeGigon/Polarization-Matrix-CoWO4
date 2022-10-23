@@ -1,0 +1,27 @@
+This code allows to compute the polarization matrix 
+elements for CoWO4 with the assumed magnetic structure
+and to compare them to experimental data from 
+spherical neutron polarimetry. The experimental data
+can be found in the file CoWO4_SNP_data.txt
+
+The file constants.py contains all the physical parameters
+for the unit cell and the plot.
+A unit cell is parametrized by its sidelength in ANGSTROEM
+and the angle beta between the two sides A and C (monoclinic).
+
+The computations are done in main.py. First, the atoms 
+(AtomGenerator.Atom) are initialized at their positions. 
+Then they are used to construct the unit magnetic unit cell 
+(UnitCell.Unit_cell). Finally, the polarization matrix elements 
+are computed (P_matrix.get_P) and ploted together 
+with the measured values.
+
+Details about the polarization matrix can be found in:
+"Proof of the elusive high-temperature incommensurate phase 
+in CuO by spherical neutron polarimetry", 
+Navid Qureshi, Eric Ressouche, Alexander Mukhin, Marin Gospodinov, Vassil Skumryev
+https://www.science.org/doi/abs/10.1126/sciadv.aay7661
+
+
+
+
